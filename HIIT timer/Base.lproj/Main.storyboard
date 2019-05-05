@@ -18,16 +18,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mzy-tp-wEU">
-                                <rect key="frame" x="0.0" y="70" width="320" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout interval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvn-IF-JC7">
+                                <rect key="frame" x="97.5" y="60" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJz-YR-7i1">
+                                <rect key="frame" x="135" y="101" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CO3-52-V2z"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgX-uS-nwa">
+                                <rect key="frame" x="190" y="105.5" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest interval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2T-IS-pXp">
+                                <rect key="frame" x="112.5" y="171" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2j-fK-wXT">
+                                <rect key="frame" x="135" y="212" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MKm-cE-Y14"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-sz-uIP">
+                                <rect key="frame" x="190" y="216.5" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35i-iY-6No">
+                                <rect key="frame" x="88.5" y="282" width="143" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Set Workout"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kgX-uS-nwa" firstAttribute="centerY" secondItem="uJz-YR-7i1" secondAttribute="centerY" id="25Z-Ys-UUX"/>
+                            <constraint firstItem="uJz-YR-7i1" firstAttribute="top" secondItem="Rvn-IF-JC7" secondAttribute="bottom" constant="20" id="3Ay-Xj-Zzf"/>
+                            <constraint firstItem="W2T-IS-pXp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AfJ-95-goW"/>
+                            <constraint firstItem="0h9-sz-uIP" firstAttribute="centerY" secondItem="Z2j-fK-wXT" secondAttribute="centerY" id="EvR-w5-CyM"/>
+                            <constraint firstItem="Rvn-IF-JC7" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="40" id="JRr-lo-7KP"/>
+                            <constraint firstItem="Z2j-fK-wXT" firstAttribute="top" secondItem="W2T-IS-pXp" secondAttribute="bottom" constant="20" id="OvG-Ke-qCa"/>
+                            <constraint firstItem="35i-iY-6No" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qqt-XN-ioj"/>
+                            <constraint firstItem="W2T-IS-pXp" firstAttribute="top" secondItem="uJz-YR-7i1" secondAttribute="bottom" constant="40" id="Xte-Sn-rg1"/>
+                            <constraint firstItem="0h9-sz-uIP" firstAttribute="leading" secondItem="Z2j-fK-wXT" secondAttribute="trailing" constant="5" id="bhd-bf-Ozt"/>
+                            <constraint firstItem="uJz-YR-7i1" firstAttribute="centerX" secondItem="Rvn-IF-JC7" secondAttribute="centerX" id="eLo-cn-0om"/>
+                            <constraint firstItem="Z2j-fK-wXT" firstAttribute="centerX" secondItem="W2T-IS-pXp" secondAttribute="centerX" id="fPm-5Q-eNp"/>
+                            <constraint firstItem="Rvn-IF-JC7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gfi-tx-ukl"/>
+                            <constraint firstItem="35i-iY-6No" firstAttribute="top" secondItem="Z2j-fK-wXT" secondAttribute="bottom" constant="40" id="kPj-Gn-VA2"/>
+                            <constraint firstItem="kgX-uS-nwa" firstAttribute="leading" secondItem="uJz-YR-7i1" secondAttribute="trailing" constant="5" id="leL-fk-IfD"/>
+                            <constraint firstItem="Z2j-fK-wXT" firstAttribute="centerX" secondItem="W2T-IS-pXp" secondAttribute="centerX" id="xFh-XS-oGU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
-                        <outlet property="interval" destination="Mzy-tp-wEU" id="Bjn-GL-cHI"/>
+                        <outlet property="restIntervalInput" destination="Z2j-fK-wXT" id="Wvb-va-upY"/>
+                        <outlet property="setWorkoutButton" destination="35i-iY-6No" id="PSc-Bp-tAs"/>
+                        <outlet property="workIntervalInput" destination="uJz-YR-7i1" id="TBF-N1-g7b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,6 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HIIT_timer_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label alignment="left" text="Label" id="rYz-Yy-XdR"/>
                         <button width="1" alignment="left" title="Start" id="UfO-nz-0vP">
                             <connections>
                                 <action selector="startButton" destination="AgC-eL-Hgc" id="Ilg-75-M5t"/>
@@ -27,6 +28,7 @@
                         <label alignment="left" text="Label" id="C7E-Sc-7XA"/>
                     </items>
                     <connections>
+                        <outlet property="WorkoutLabel" destination="rYz-Yy-XdR" id="DMn-kr-ANf"/>
                         <outlet property="activityLabel" destination="C7E-Sc-7XA" id="nrK-E9-TAq"/>
                     </connections>
                 </controller>

@@ -7,58 +7,60 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+class ViewController: UIViewController, WCSessionDelegate {
+    @IBOutlet weak var workIntervalInput: UITextField!
+    @IBOutlet weak var restIntervalInput: UITextField!
+    @IBOutlet weak var setWorkoutButton: UIButton!
+    func workIntervalInput(_ workIntervalInput: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
+        return string.rangeOfCharacter(from: invalidCharacters) == nil
+    }
+    
+    func restIntervalInput(_ restIntervalInput: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
+        return string.rangeOfCharacter(from: invalidCharacters) == nil
+    }
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return intervalData.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return intervalData[row]
-    }
-    
-    func view(viewForRow row: Int, forComponent component: Int) -> UIView {
-        
-        
-        // Display the first column's width
-        // The value 0 is to point to the first column regardless if you have one or multiple columns
-        
-        let pickerLabel : UILabel = UILabel()
-        
-        // pickerViewLabelTextForComponentRow is a custom made function to obtain what text will go in each row
-        pickerLabel.text = "sss"
-        pickerLabel.textAlignment = NSTextAlignment.center
-        pickerLabel.textColor = UIColor.black
-        pickerLabel.font = UIFont.boldSystemFont(ofSize: 13.0)
-        pickerLabel.backgroundColor = UIColor.lightGray
-        
-        // If you wish to set up the labels individually in each column, use the value of the parameter component with a control condition such as if or switch
-        
-        return pickerLabel
-    }
-
-    @IBOutlet weak var interval: UIPickerView!
-
-    var intervalData: [String] = [String]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if (WCSession.isSupported()) {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
         
-        self.interval.delegate = self
-        self.interval.dataSource = self
+        workIntervalInput.placeholder = "40"
+        workIntervalInput.keyboardType = .numberPad
+        restIntervalInput.placeholder = "20"
+        restIntervalInput.keyboardType = .numberPad
         
-        intervalData = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+        setWorkoutButton.addTarget(self, action: #selector(sendWorkout), for: .touchUpInside)
     }
 
-    
+    @objc func sendWorkout() {
+        if (WCSession.default.isReachable) {
+            // this is a meaningless message, but it's enough for our purposes
+            let message = ["workoutInterval": Int(workIntervalInput.text ?? "0"), "restInterval": Int(restIntervalInput.text ?? "0")]
+            WCSession.default.sendMessage(message as [String : Any], replyHandler: nil)
+        }
+    }
 }

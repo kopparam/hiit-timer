@@ -8,10 +8,28 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
+    var workInterval = 4.0
+    var restInterval = 1.0
+    var workCount = 0
+    var restCount = 0
+    var reset = false
+    
+    @IBOutlet weak var WorkoutLabel: WKInterfaceLabel!
+    @IBOutlet weak var activityLabel: WKInterfaceLabel!
 
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        WKInterfaceDevice().play(.click)
+        WorkoutLabel.setText("Work: \(message["workoutInterval"] ?? "?") Rest: \(message["restInterval"] ?? "?")")
+        workInterval = Double(message["workoutInterval"] as! Int)
+        restInterval = Double(message["restInterval"]! as! Int)
+    }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -21,23 +39,19 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        if WCSession.isSupported() {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
         activityLabel.setText("")
-        totalInterval = workInterval + restInterval
+        WorkoutLabel.setText("Set a workout on the app")
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-    
-    let workInterval = 4.0
-    let restInterval = 1.0
-    var totalInterval = 0.0
-    var workCount = 0
-    var restCount = 0
-    var reset = false
-    
-    @IBOutlet weak var activityLabel: WKInterfaceLabel!
     
     fileprivate func startWorkout(_ totalInterval: Double) {
         activityLabel.setText("Work \(workCount)")
@@ -71,7 +85,7 @@ class InterfaceController: WKInterfaceController {
         Timer.scheduledTimer( withTimeInterval: 1.0, repeats: true) { timer in
             if readyCountdown == 0 {
                 timer.invalidate()
-                self.startWorkout(self.totalInterval)
+                self.startWorkout(self.workInterval+self.restInterval)
             } else {
                 self.activityLabel.setText("\(readyCountdown)")
                 readyCountdown = readyCountdown - 1
