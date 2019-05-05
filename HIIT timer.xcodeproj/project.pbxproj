@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12BAF01B2263384F00F1BE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF01A2263384F00F1BE6B /* AppDelegate.swift */; };
+		12BAF01D2263384F00F1BE6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF01C2263384F00F1BE6B /* ViewController.swift */; };
+		12BAF0202263384F00F1BE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF01E2263384F00F1BE6B /* Main.storyboard */; };
+		12BAF0222263384F00F1BE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF0212263384F00F1BE6B /* Assets.xcassets */; };
+		12BAF0252263384F00F1BE6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF0232263384F00F1BE6B /* LaunchScreen.storyboard */; };
+		12BAF0302263384F00F1BE6B /* HIIT_timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF02F2263384F00F1BE6B /* HIIT_timerTests.swift */; };
+		12BAF03B2263384F00F1BE6B /* HIIT_timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF03A2263384F00F1BE6B /* HIIT_timerUITests.swift */; };
+		12BAF0402263384F00F1BE6B /* HIIT timer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12BAF03F2263384F00F1BE6B /* HIIT timer WatchKit App.app */; };
+		12BAF0462263384F00F1BE6B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF0442263384F00F1BE6B /* Interface.storyboard */; };
+		12BAF0482263385000F1BE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF0472263385000F1BE6B /* Assets.xcassets */; };
+		12BAF04F2263385000F1BE6B /* HIIT timer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 12BAF04E2263385000F1BE6B /* HIIT timer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12BAF0542263385000F1BE6B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF0532263385000F1BE6B /* InterfaceController.swift */; };
+		12BAF0562263385000F1BE6B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF0552263385000F1BE6B /* ExtensionDelegate.swift */; };
+		12BAF0582263385000F1BE6B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BAF0572263385000F1BE6B /* NotificationController.swift */; };
+		12BAF05A2263385100F1BE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BAF0592263385100F1BE6B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12BAF02C2263384F00F1BE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12BAF00F2263384F00F1BE6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12BAF0162263384F00F1BE6B;
+			remoteInfo = "HIIT timer";
+		};
+		12BAF0372263384F00F1BE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12BAF00F2263384F00F1BE6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12BAF0162263384F00F1BE6B;
+			remoteInfo = "HIIT timer";
+		};
+		12BAF0412263384F00F1BE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12BAF00F2263384F00F1BE6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12BAF03E2263384F00F1BE6B;
+			remoteInfo = "HIIT timer WatchKit App";
+		};
+		12BAF0502263385000F1BE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12BAF00F2263384F00F1BE6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12BAF04D2263385000F1BE6B;
+			remoteInfo = "HIIT timer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12BAF0622263385100F1BE6B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				12BAF04F2263385000F1BE6B /* HIIT timer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF0662263385100F1BE6B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				12BAF0402263384F00F1BE6B /* HIIT timer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12BAF0172263384F00F1BE6B /* HIIT timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HIIT timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BAF01A2263384F00F1BE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12BAF01C2263384F00F1BE6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12BAF01F2263384F00F1BE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12BAF0212263384F00F1BE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12BAF0242263384F00F1BE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12BAF0262263384F00F1BE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BAF02B2263384F00F1BE6B /* HIIT timerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HIIT timerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BAF02F2263384F00F1BE6B /* HIIT_timerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIIT_timerTests.swift; sourceTree = "<group>"; };
+		12BAF0312263384F00F1BE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BAF0362263384F00F1BE6B /* HIIT timerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HIIT timerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BAF03A2263384F00F1BE6B /* HIIT_timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIIT_timerUITests.swift; sourceTree = "<group>"; };
+		12BAF03C2263384F00F1BE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BAF03F2263384F00F1BE6B /* HIIT timer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HIIT timer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BAF0452263384F00F1BE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		12BAF0472263385000F1BE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12BAF0492263385000F1BE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BAF04E2263385000F1BE6B /* HIIT timer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HIIT timer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12BAF0532263385000F1BE6B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		12BAF0552263385000F1BE6B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		12BAF0572263385000F1BE6B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		12BAF0592263385100F1BE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12BAF05B2263385100F1BE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BAF05C2263385100F1BE6B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12BAF0142263384F00F1BE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF0282263384F00F1BE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF0332263384F00F1BE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF04B2263385000F1BE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12BAF00E2263384F00F1BE6B = {
+			isa = PBXGroup;
+			children = (
+				12BAF0192263384F00F1BE6B /* HIIT timer */,
+				12BAF02E2263384F00F1BE6B /* HIIT timerTests */,
+				12BAF0392263384F00F1BE6B /* HIIT timerUITests */,
+				12BAF0432263384F00F1BE6B /* HIIT timer WatchKit App */,
+				12BAF0522263385000F1BE6B /* HIIT timer WatchKit Extension */,
+				12BAF0182263384F00F1BE6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12BAF0182263384F00F1BE6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF0172263384F00F1BE6B /* HIIT timer.app */,
+				12BAF02B2263384F00F1BE6B /* HIIT timerTests.xctest */,
+				12BAF0362263384F00F1BE6B /* HIIT timerUITests.xctest */,
+				12BAF03F2263384F00F1BE6B /* HIIT timer WatchKit App.app */,
+				12BAF04E2263385000F1BE6B /* HIIT timer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12BAF0192263384F00F1BE6B /* HIIT timer */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF01A2263384F00F1BE6B /* AppDelegate.swift */,
+				12BAF01C2263384F00F1BE6B /* ViewController.swift */,
+				12BAF01E2263384F00F1BE6B /* Main.storyboard */,
+				12BAF0212263384F00F1BE6B /* Assets.xcassets */,
+				12BAF0232263384F00F1BE6B /* LaunchScreen.storyboard */,
+				12BAF0262263384F00F1BE6B /* Info.plist */,
+			);
+			path = "HIIT timer";
+			sourceTree = "<group>";
+		};
+		12BAF02E2263384F00F1BE6B /* HIIT timerTests */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF02F2263384F00F1BE6B /* HIIT_timerTests.swift */,
+				12BAF0312263384F00F1BE6B /* Info.plist */,
+			);
+			path = "HIIT timerTests";
+			sourceTree = "<group>";
+		};
+		12BAF0392263384F00F1BE6B /* HIIT timerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF03A2263384F00F1BE6B /* HIIT_timerUITests.swift */,
+				12BAF03C2263384F00F1BE6B /* Info.plist */,
+			);
+			path = "HIIT timerUITests";
+			sourceTree = "<group>";
+		};
+		12BAF0432263384F00F1BE6B /* HIIT timer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF0442263384F00F1BE6B /* Interface.storyboard */,
+				12BAF0472263385000F1BE6B /* Assets.xcassets */,
+				12BAF0492263385000F1BE6B /* Info.plist */,
+			);
+			path = "HIIT timer WatchKit App";
+			sourceTree = "<group>";
+		};
+		12BAF0522263385000F1BE6B /* HIIT timer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12BAF0532263385000F1BE6B /* InterfaceController.swift */,
+				12BAF0552263385000F1BE6B /* ExtensionDelegate.swift */,
+				12BAF0572263385000F1BE6B /* NotificationController.swift */,
+				12BAF0592263385100F1BE6B /* Assets.xcassets */,
+				12BAF05B2263385100F1BE6B /* Info.plist */,
+				12BAF05C2263385100F1BE6B /* PushNotificationPayload.apns */,
+			);
+			path = "HIIT timer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12BAF0162263384F00F1BE6B /* HIIT timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BAF0672263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timer" */;
+			buildPhases = (
+				12BAF0132263384F00F1BE6B /* Sources */,
+				12BAF0142263384F00F1BE6B /* Frameworks */,
+				12BAF0152263384F00F1BE6B /* Resources */,
+				12BAF0662263385100F1BE6B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BAF0422263384F00F1BE6B /* PBXTargetDependency */,
+			);
+			name = "HIIT timer";
+			productName = "HIIT timer";
+			productReference = 12BAF0172263384F00F1BE6B /* HIIT timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12BAF02A2263384F00F1BE6B /* HIIT timerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BAF06A2263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timerTests" */;
+			buildPhases = (
+				12BAF0272263384F00F1BE6B /* Sources */,
+				12BAF0282263384F00F1BE6B /* Frameworks */,
+				12BAF0292263384F00F1BE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BAF02D2263384F00F1BE6B /* PBXTargetDependency */,
+			);
+			name = "HIIT timerTests";
+			productName = "HIIT timerTests";
+			productReference = 12BAF02B2263384F00F1BE6B /* HIIT timerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12BAF0352263384F00F1BE6B /* HIIT timerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BAF06D2263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timerUITests" */;
+			buildPhases = (
+				12BAF0322263384F00F1BE6B /* Sources */,
+				12BAF0332263384F00F1BE6B /* Frameworks */,
+				12BAF0342263384F00F1BE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BAF0382263384F00F1BE6B /* PBXTargetDependency */,
+			);
+			name = "HIIT timerUITests";
+			productName = "HIIT timerUITests";
+			productReference = 12BAF0362263384F00F1BE6B /* HIIT timerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		12BAF03E2263384F00F1BE6B /* HIIT timer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BAF0632263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timer WatchKit App" */;
+			buildPhases = (
+				12BAF03D2263384F00F1BE6B /* Resources */,
+				12BAF0622263385100F1BE6B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BAF0512263385000F1BE6B /* PBXTargetDependency */,
+			);
+			name = "HIIT timer WatchKit App";
+			productName = "HIIT timer WatchKit App";
+			productReference = 12BAF03F2263384F00F1BE6B /* HIIT timer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		12BAF04D2263385000F1BE6B /* HIIT timer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12BAF05F2263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timer WatchKit Extension" */;
+			buildPhases = (
+				12BAF04A2263385000F1BE6B /* Sources */,
+				12BAF04B2263385000F1BE6B /* Frameworks */,
+				12BAF04C2263385000F1BE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HIIT timer WatchKit Extension";
+			productName = "HIIT timer WatchKit Extension";
+			productReference = 12BAF04E2263385000F1BE6B /* HIIT timer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12BAF00F2263384F00F1BE6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Kashyap Kopparam";
+				TargetAttributes = {
+					12BAF0162263384F00F1BE6B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					12BAF02A2263384F00F1BE6B = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 12BAF0162263384F00F1BE6B;
+					};
+					12BAF0352263384F00F1BE6B = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 12BAF0162263384F00F1BE6B;
+					};
+					12BAF03E2263384F00F1BE6B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					12BAF04D2263385000F1BE6B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 12BAF0122263384F00F1BE6B /* Build configuration list for PBXProject "HIIT timer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12BAF00E2263384F00F1BE6B;
+			productRefGroup = 12BAF0182263384F00F1BE6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12BAF0162263384F00F1BE6B /* HIIT timer */,
+				12BAF02A2263384F00F1BE6B /* HIIT timerTests */,
+				12BAF0352263384F00F1BE6B /* HIIT timerUITests */,
+				12BAF03E2263384F00F1BE6B /* HIIT timer WatchKit App */,
+				12BAF04D2263385000F1BE6B /* HIIT timer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12BAF0152263384F00F1BE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BAF0252263384F00F1BE6B /* LaunchScreen.storyboard in Resources */,
+				12BAF0222263384F00F1BE6B /* Assets.xcassets in Resources */,
+				12BAF0202263384F00F1BE6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF0292263384F00F1BE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF0342263384F00F1BE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF03D2263384F00F1BE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BAF0482263385000F1BE6B /* Assets.xcassets in Resources */,
+				12BAF0462263384F00F1BE6B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF04C2263385000F1BE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BAF05A2263385100F1BE6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12BAF0132263384F00F1BE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BAF01D2263384F00F1BE6B /* ViewController.swift in Sources */,
+				12BAF01B2263384F00F1BE6B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF0272263384F00F1BE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BAF0302263384F00F1BE6B /* HIIT_timerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF0322263384F00F1BE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BAF03B2263384F00F1BE6B /* HIIT_timerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12BAF04A2263385000F1BE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12BAF0582263385000F1BE6B /* NotificationController.swift in Sources */,
+				12BAF0562263385000F1BE6B /* ExtensionDelegate.swift in Sources */,
+				12BAF0542263385000F1BE6B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12BAF02D2263384F00F1BE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12BAF0162263384F00F1BE6B /* HIIT timer */;
+			targetProxy = 12BAF02C2263384F00F1BE6B /* PBXContainerItemProxy */;
+		};
+		12BAF0382263384F00F1BE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12BAF0162263384F00F1BE6B /* HIIT timer */;
+			targetProxy = 12BAF0372263384F00F1BE6B /* PBXContainerItemProxy */;
+		};
+		12BAF0422263384F00F1BE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12BAF03E2263384F00F1BE6B /* HIIT timer WatchKit App */;
+			targetProxy = 12BAF0412263384F00F1BE6B /* PBXContainerItemProxy */;
+		};
+		12BAF0512263385000F1BE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12BAF04D2263385000F1BE6B /* HIIT timer WatchKit Extension */;
+			targetProxy = 12BAF0502263385000F1BE6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12BAF01E2263384F00F1BE6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12BAF01F2263384F00F1BE6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12BAF0232263384F00F1BE6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12BAF0242263384F00F1BE6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		12BAF0442263384F00F1BE6B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12BAF0452263384F00F1BE6B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12BAF05D2263385100F1BE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12BAF05E2263385100F1BE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12BAF0602263385100F1BE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		12BAF0612263385100F1BE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		12BAF0642263385100F1BE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HIIT_timer_WatchKit_Extension;
+				INFOPLIST_FILE = "HIIT timer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		12BAF0652263385100F1BE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HIIT_timer_WatchKit_Extension;
+				INFOPLIST_FILE = "HIIT timer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		12BAF0682263385100F1BE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12BAF0692263385100F1BE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12BAF06B2263385100F1BE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIIT timer.app/HIIT timer";
+			};
+			name = Debug;
+		};
+		12BAF06C2263385100F1BE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIIT timer.app/HIIT timer";
+			};
+			name = Release;
+		};
+		12BAF06E2263385100F1BE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HIIT timer";
+			};
+			name = Debug;
+		};
+		12BAF06F2263385100F1BE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HIIT timerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kopparam.HIIT-timerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HIIT timer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12BAF0122263384F00F1BE6B /* Build configuration list for PBXProject "HIIT timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BAF05D2263385100F1BE6B /* Debug */,
+				12BAF05E2263385100F1BE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12BAF05F2263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BAF0602263385100F1BE6B /* Debug */,
+				12BAF0612263385100F1BE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12BAF0632263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BAF0642263385100F1BE6B /* Debug */,
+				12BAF0652263385100F1BE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12BAF0672263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BAF0682263385100F1BE6B /* Debug */,
+				12BAF0692263385100F1BE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12BAF06A2263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BAF06B2263385100F1BE6B /* Debug */,
+				12BAF06C2263385100F1BE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12BAF06D2263385100F1BE6B /* Build configuration list for PBXNativeTarget "HIIT timerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12BAF06E2263385100F1BE6B /* Debug */,
+				12BAF06F2263385100F1BE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12BAF00F2263384F00F1BE6B /* Project object */;
+}
